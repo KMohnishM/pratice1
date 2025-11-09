@@ -13,8 +13,9 @@ EXCEL_PATH = "/home/ec2-user/AWS_Cloud/data/patient_samples/patients_data.xlsx" 
 
 # --- CREATE SQLALCHEMY ENGINE ---
 engine = create_engine(
-    f"mysql+pymysql://{RDS_USERNAME}:{RDS_PASSWORD}@{RDS_HOSTNAME}:{RDS_PORT}/{RDS_DB_NAME}"
+    "mysql+pymysql://uploader:UploadPass123!@database-1.cxkucyeociny.ap-south-1.rds.amazonaws.com:3306/healthcare"
 )
+
 
 # --- LOAD EXCEL ---
 print("📂 Reading Excel file...")
